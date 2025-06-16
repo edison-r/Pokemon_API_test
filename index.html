@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/Pokeball_icon.svg">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Pokemon API</title>
+</head>
+<body class="p-8 flex flex-col items-center">
+    <div class="container">
+        <h1 class="text-3xl font-bold pb-8 text-center">Pokémon Searcher</h1>
+        <form>
+            <div class="w-full max-w-sm min-w-[200px] mx-auto">
+                <div class="relative">
+                    <input class="peer w-full bg-transparent placeholder:text-gray-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" type="text" id="namePokemon" placeholder="Pokémon..."/>
+                    <button class="group absolute right-1 top-1 rounded-md bg-gray-700 py-1 px-1 border border-transparent text-center text-sm transition-all shadow-sm hover:shadow hover:bg-gray-600 focus:bg-gray-500 focus:shadow-none cursor-pointer" type="submit" id="searchPokemon">
+                        <div class="transition duration-300 group-hover:rotate-[360deg]">
+                            <img class="w-5 h-5" src="assets/img/Pokeball_icon.svg" alt="Icono de Pokéball"/>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="p5" id="pokemonContainer"></div>
+    </div>
+    <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
